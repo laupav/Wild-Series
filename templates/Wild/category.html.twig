@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <ul>
+        {% for show in shows %}
+            <li>{{ show.id }} - {{ show.title }} :</li>
+            <p>{{ show.summary }}</p>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
